@@ -1,22 +1,85 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>EmTech Playground</title>
-        <meta name = "author" content="Anthony Ovando">
-        <meta name = "description" content = "EmTech Landing Page">
-        <link href = "css/reset.css" rel = "stylesheet"
-        <link href = "css/stylesheet.css" rel = "stylesheet">
-    </head>
-    <body>
-        <header>
-            <nav>
-                <ul>
-                    <li>Home</li>
-                    <li>Discover</li>
-                    <li>About</li>
-                    <li>Contact</li>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Landing Page</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel ="stylesheet" href = "css/stylesheet.css">
+</head>
+<style>
+  .hero {
+    background: url('images/background-landing.png') center center/cover no-repeat;
+    height: 100%;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+</style>
+<body>
+
+<!-- Container for Navbar and Hero -->
+<div class="container-full">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <img src="images/EmTechMOOC-SUNY-logo.png" alt="Your Brand Logo">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Discover</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
                 </ul>
-            </nav>
-        </header>
-    </body>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <!--empty-->
+                </div>
+                <div class="col-md-6 content-col">
+                  <h1>Stay current in today's rapidly changing world</h1>
+                    <p></p>
+                    <a href="#" class="btn btn-primary">Discover</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- EmTech Content Section -->
+<div class="EmTech-content">
+    <img src="images/Useful.png" alt="Placeholder Image">
+    <div class = "inner-content">
+        <h2>What is EmTech?</h2>
+        <p>Emerging Technologies - EmTech for short - is a project from the State University of New York, SUNY, designed to provide a lifelong learning and success experience to faculty, students, and professionals of all kinds.</p>
+        <p>EmTech comprises two main tools: EmTech Wiki, where you will find hundreds of different tools and reviews according to your needs; and the EmTech MOOC, the perfect place for understanding lifelong learning and success.</p>
+    </div>
+</div>
+
+<!-- Bootstrap JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrap.min.js"></script>
+</body>
 </html>
