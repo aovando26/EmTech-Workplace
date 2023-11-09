@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@700&family=Jolly+Lodger&family=Lato:wght@300&family=Lexend+Deca&family=Mochiy+Pop+P+One&family=Noto+Sans:wght@300&family=Permanent+Marker&display=swap');
+
 .container-full {
     height: 100vh;
     overflow: hidden;
@@ -26,6 +28,7 @@
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 20px;
+    align-items: center;
 }
 .inner-content {
   text-align: justify;
@@ -35,4 +38,44 @@
 .EmTech-content img {
     max-width: 100%;
     height: auto;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-evenly; 
+    padding: 20px; 
+    background-color:#99BBE6;
+}
+
+.flex-item {
+    text-align: center;
+    padding: 3vmax;
+}
+
+.flex-item h3 {
+    font-size: 3rem;
+    margin: 0;
+    color: white;
+    font-family: Mochiy Pop P One, serif;
+}
+
+.flex-item p {
+    margin: 0;
+    color: black;
+}
+
+.grid-container {
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: repeat(2, 1fr);
+    height: auto;
+    gap: 1.6rem;
+    padding: 5vmax;
+}
+
+.grid-item h4 {
+    font-size: 1.5rem;
+    font-weight: 900;
+    line-height: 1.6;
+    color: black;
 }
